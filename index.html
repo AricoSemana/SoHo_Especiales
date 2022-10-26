@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Especial Mundial - Soho.co</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  
+  <!-- Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  
+  <!-- pre connect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+  
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Custom css -->
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <div class="relative mx-auto bg-black w-full mx-auto font-mukta py-4">
+
+    <h2
+      class="text-[40px] max-w-screen-xl text-white text-center font-extrabold leading-none md:text-8xl mt-6 mx-auto mb-6">
+      EL ÚLTIMO MUNDIAL DE
+      ALGUNAS ESTRELLAS</h2>
+
+    <div class="relative max-w-screen-2xl mx-auto px-4">
+
+      <div class="swiper-container mySwiper">
+  
+        <div class="swiper-wrapper text-white text-center mt-5 mb-32">
+          <div class="swiper-slide select-none">
+            <img src="https://figuritasqatar.com.ar/wp-content/uploads/kylian-mbappe-231x300.png"
+              class="object-cover h-96 w-80 bg-white object-fill" alt="" />
+            <p class="mt-5 text-center text-2xl mx-auto">KYLIAN MBAPPÉ</p>
+          </div>
+          <div class="swiper-slide select-none">
+            <img src="https://figuritasqatar.com.ar/wp-content/uploads/neymar-jr-231x300.png"
+              class="object-cover h-96 w-80 bg-white object-fill" alt="" />
+            <p class="mt-5 text-center text-2xl mx-auto">NEYMAR JR</p>
+          </div>
+          <div class="swiper-slide select-none">
+            <img src="https://figuritasqatar.com.ar/wp-content/uploads/lionel-messi-231x300.png"
+              class="object-cover h-96 w-80 bg-white object-fill" alt="" />
+            <p class="mt-5 text-center text-2xl  mx-auto">LIONEL MESSI</p>
+          </div>
+          <div class="swiper-slide select-none">
+            <img
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir4XvL7rVNaqX_a6DYJ4-ilCeWG6JtoYF1dZXvD4sCIsvOrI7LDdyBIT_9B3lozgCBEbuVIHJvW_bsu_GbvwEhezOm57f11cgdueClP032RWefe0DQ595dx6TAbB13JK--qNm8hIzoj4KxNY9U2W6kqRWrz0aLSXUKrVtgjolkEZ5b9D9EXfvpC3_IvQ/s771/panini-fifa-world-cup-2022-b%C3%A1sico-modric.jpg"
+              class="object-cover h-96 w-80 bg-white object-fill" alt="" />
+            <p class="mt-5 text-center text-2xl mx-auto">LUKA MODRIC</p>
+          </div>
+          <div class="swiper-slide select-none">
+            <img src="https://i.picsum.photos/id/1024/1920/1280.jpg?hmac=-PIpG7j_fRwN8Qtfnsc3M8-kC3yb0XYOBfVzlPSuVII"
+              class="object-cover h-96 w-80 bg-white object-fill" alt="" />
+            <p class="mt-5 text-center text-2xl mx-auto">LOREM 1</p>
+          </div>
+        </div>
+  
+        <div class="swiper-pagination"></div>
+      </div>
+      
+      <div class="swiper-button-next mt-16"></div>
+      <div class="swiper-button-prev mt-16"></div>
+
+    </div>
+
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 'auto',
+      spaceBetween: 100,
+      trhesold: 20,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
