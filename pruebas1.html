@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Mundial soho.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* pagination */
+
+    .swiper-container .swiper-pagination .swiper-pagination-bullet {
+      width: 22px;
+      height: 22px;
+      background-color: white;
+      margin: 0;
+      margin-right: 25px;
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
+      bottom: 2px;
+      margin-top: 2px;
+    }
+
+    .swiper-button-next {
+      background-color: transparent;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z' clip-rule='evenodd' /%3e%3c/svg%3e ");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+      color: azure;
+      
+    }
+
+    .swiper-button-prev {
+      background-color: transparent;
+      background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='gray' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M7.28 7.72a.75.75 0 010 1.06l-2.47 2.47H21a.75.75 0 010 1.5H4.81l2.47 2.47a.75.75 0 11-1.06 1.06l-3.75-3.75a.75.75 0 010-1.06l3.75-3.75a.75.75 0 011.06 0z' clip-rule='evenodd' /%3e%3c/svg%3e ");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      background-position: center;
+      color: azure;
+     
+    }
+
+    .swiper-button-next::after {
+      display: none;
+    }
+
+    .swiper-button-prev::after {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+ 
+  <div class="relative mx-auto flex h-[813px] flex-col bg-black w-full mx-auto">
+
+    <h2 class="text-[40px] max-w-screen-xl text-white text-center font-extrabold leading-none md:text-[100px] mt-10 mx-auto mb-10">EL ÚLTIMO MUNDIAL DE
+      ALGUNAS ESTRELLAS</h2>
+
+    <div class="swiper-container mySwiper px-5">
+
+      <div class="swiper-wrapper text-white text-center mt-5">
+        <div class="swiper-slide">
+          <img src="https://figuritasqatar.com.ar/wp-content/uploads/kylian-mbappe-231x300.png"
+            class="object-cover h-96 w-80 bg-white object-fill mx-auto" alt="" />
+          <p class="mt-5 text-2xl mx-auto">KYLIAN MBAPPÉ</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="https://figuritasqatar.com.ar/wp-content/uploads/neymar-jr-231x300.png"
+            class="object-cover h-96 w-80 bg-white object-fill mx-auto" alt="" />
+          <p class="mt-5 text-2xl mx-auto">NEYMAR JR</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="https://figuritasqatar.com.ar/wp-content/uploads/lionel-messi-231x300.png"
+            class="object-cover h-96 w-80 bg-white object-fill mx-auto" alt="" />
+          <p class="mt-5 text-2xl  mx-auto">LIONEL MESSI</p>
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir4XvL7rVNaqX_a6DYJ4-ilCeWG6JtoYF1dZXvD4sCIsvOrI7LDdyBIT_9B3lozgCBEbuVIHJvW_bsu_GbvwEhezOm57f11cgdueClP032RWefe0DQ595dx6TAbB13JK--qNm8hIzoj4KxNY9U2W6kqRWrz0aLSXUKrVtgjolkEZ5b9D9EXfvpC3_IvQ/s771/panini-fifa-world-cup-2022-b%C3%A1sico-modric.jpg"
+            class="object-cover h-96 w-80 bg-white object-fill mx-auto" alt="" />
+          <p class="mt-5 text-2xl mx-auto">LUKA MODRIC</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.picsum.photos/id/1024/1920/1280.jpg?hmac=-PIpG7j_fRwN8Qtfnsc3M8-kC3yb0XYOBfVzlPSuVII"
+            class="object-cover h-96 w-80 bg-white object-fill mx-auto" alt="" />
+          <p class="mt-5 text-2xl mx-auto">LOREM 1</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.picsum.photos/id/1074/5472/3648.jpg?hmac=w-Fbv9bl0KpEUgZugbsiGk3Y2-LGAuiLZOYsRk0zo4A"
+            class="object-cover h-96 w-80 bg-white object-fill mx-auto" alt="" />
+          <p class="mt-5 text-2xl mx-auto">LOREM 2</p>
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.picsum.photos/id/152/3888/2592.jpg?hmac=M1xv1MzO9xjf5-tz1hGR9bQpNt973ANkqfEVDW0-WYU"
+            class="object-cover h-96 w-80 bg-white object-fill mx-auto" alt="" />
+          <p class="mt-5 text-2xl mx-auto">LOREM 3</p>
+        </div>
+      </div>
+
+      <div class="swiper-button-next mt-16"></div>
+      <div class="swiper-button-prev mt-16"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      slidesPerView: 3,
+      spaceBetween: 10,
+      centeredSlides: true,
+      initialSlide: 1,
+      createElements: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</body>
+
+</html>
