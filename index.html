@@ -16,11 +16,132 @@
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 
-  <!-- Custom css -->
-  <link rel="stylesheet" href="css/custom.css" />
-
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
+<style>
+  /* pagination */
+.font-mukta {
+  font-family: "Mukta", sans-serif;
+}
+
+.swiper-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1120px;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  gap: 100px; 
+}
+
+.swiper-wrapper .swiper-slide {
+  width: 374px;
+}
+
+.swiper-pagination {
+  margin-bottom: 50px;
+  
+}
+
+.swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 1px solid white;
+  opacity: .8;
+ 
+}
+
+.swiper-container .swiper-pagination .swiper-pagination-bullet-active,
+.swiper-container .swiper-pagination .swiper-pagination-bullet:hover {
+  background-color: white;
+  opacity: 1;
+}
+
+.swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z' clip-rule='evenodd' /%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  top: 40% !important;
+  width: calc(var(--swiper-navigation-size)/ 24 * 22);
+}
+
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M7.28 7.72a.75.75 0 010 1.06l-2.47 2.47H21a.75.75 0 010 1.5H4.81l2.47 2.47a.75.75 0 11-1.06 1.06l-3.75-3.75a.75.75 0 010-1.06l3.75-3.75a.75.75 0 011.06 0z' clip-rule='evenodd' /%3e%3c/svg%3e ");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  top: 40% !important;
+  width: calc(var(--swiper-navigation-size)/ 24 * 22);
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+
+@media (max-width: 640px) {
+
+  .swiper-pagination {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .swiper-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .swiper-button-prev {
+    background-image: none
+  }
+
+  .swiper-button-next {
+    background-image: none
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .swiper-button-next {   
+    margin-right: 1rem;    
+  }
+
+  .swiper-button-prev {    
+    margin-left: 1rem; 
+  }
+ 
+}
+
+@media (min-width: 1440px) {
+
+  .swiper-button-next {  
+    margin-right: 4rem;    
+  }
+
+  .swiper-button-prev {  
+    margin-left: 4rem; 
+  }
+
+}
+</style>
 
 <body>
 
@@ -89,7 +210,7 @@
           slidesPerView: 1,
           spaceBetween: 20,
           pagination: {
-            
+            el: ".swiper-pagination",
             clickable: true,
           },
          
@@ -98,7 +219,7 @@
           slidesPerView: 1,
           spaceBetween: 20,
           pagination: {
-            
+            el: ".swiper-pagination",
             clickable: true,
           },
         },
