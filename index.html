@@ -46,25 +46,6 @@
   width: 374px;
 }
 
-.swiper-pagination {
-  margin-bottom: 50px;
-  
-}
-
-.swiper-container .swiper-pagination .swiper-pagination-bullet {
-  width: 22px;
-  height: 22px;
-  background-color: transparent;
-  border: 1px solid white;
-  opacity: .8;
- 
-}
-
-.swiper-container .swiper-pagination .swiper-pagination-bullet-active,
-.swiper-container .swiper-pagination .swiper-pagination-bullet:hover {
-  background-color: white;
-  opacity: 1;
-}
 
 .swiper-button-next {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z' clip-rule='evenodd' /%3e%3c/svg%3e ");
@@ -100,14 +81,7 @@
 
 @media (max-width: 640px) {
 
-  .swiper-pagination {
-    display: flex;
-    justify-content: space-around;
-    gap: 5px;
-    margin-bottom: 10px;
-  }
-
-  .swiper-container {
+   .swiper-container {
     position: relative;
     margin: 0 auto;
     max-width: 320px;
@@ -152,12 +126,17 @@
 
 <body>
 
-  <div class="relative w-full h-[720px] mx-auto font-mukta py-4 background-soho">
+  <div class="relative w-full mx-auto font-mukta py-4 background-soho">
 
-    <h2
-      class="text-[40px] max-w-screen-xl text-white text-center font-extrabold leading-none md:text-6xl lg:text-8xl mt-6 mx-auto mb-6">
+    <div class='mt-10 md:mt-16'>
+      <h2
+      class="text-[40px] max-w-screen-xl text-black text-center font-extrabold leading-none md:text-6xl lg:text-8xl  mx-auto">
       EL ÚLTIMO MUNDIAL DE
-      ALGUNAS ESTRELLAS</h2>
+    </h2>
+    <h2 class="text-[40px] max-w-screen-xl text-white text-center font-extrabold leading-none md:text-6xl lg:text-8xl mx-auto">
+      ALGUNAS ESTELLAS
+    </h2>
+    </div>    
 
     <div class="relative max-w-screen-2xl mx-auto px-2">
 
@@ -166,39 +145,48 @@
         <div class="swiper-wrapper text-white text-center mt-5 mb-16 md:mb-32 ">
 
           <div class="swiper-slide select-none">
-            <img src="https://figuritasqatar.com.ar/wp-content/uploads/kylian-mbappe-231x300.png"
-              class="object-cover h-96 w-96 bg-white object-fill mx-auto" alt="" />
-            <p class="mt-5 text-center text-2xl mx-auto">KYLIAN MBAPPÉ</p>
+            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+2.png"
+              class="object-cover object-cover mx-auto" alt="" />
+            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Lionel Messi</p>
           </div>
           <div class="swiper-slide select-none">
-            <img src="https://figuritasqatar.com.ar/wp-content/uploads/neymar-jr-231x300.png"
-              class="object-cover h-96 w-96 bg-white object-fill mx-auto" alt="" />
-            <p class="mt-5 text-center text-2xl mx-auto">NEYMAR JR</p>
+            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+3.png"
+              class="object-cover object-cover mx-auto" alt="" />
+            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Cristiano Ronaldo</p>
           </div>
           <div class="swiper-slide select-none">
-            <img src="https://figuritasqatar.com.ar/wp-content/uploads/lionel-messi-231x300.png"
-              class="object-cover h-96 w-96 bg-white object-fill mx-auto" alt="" />
-            <p class="mt-5 text-center text-2xl  mx-auto">LIONEL MESSI</p>
+            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+4.png"
+              class="object-cover object-cover mx-auto" alt="" />
+            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Robert Lewandoski</p>
           </div>
           <div class="swiper-slide select-none">
-            <img
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir4XvL7rVNaqX_a6DYJ4-ilCeWG6JtoYF1dZXvD4sCIsvOrI7LDdyBIT_9B3lozgCBEbuVIHJvW_bsu_GbvwEhezOm57f11cgdueClP032RWefe0DQ595dx6TAbB13JK--qNm8hIzoj4KxNY9U2W6kqRWrz0aLSXUKrVtgjolkEZ5b9D9EXfvpC3_IvQ/s771/panini-fifa-world-cup-2022-b%C3%A1sico-modric.jpg"
-              class="object-cover h-96 w-96 bg-white object-fill mx-auto" alt="" />
-            <p class="mt-5 text-center text-2xl mx-auto">LUKA MODRIC</p>
+            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+5.png"
+              class="object-cover object-cover mx-auto" alt="" />
+            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Luka Modric</p>
           </div>
           <div class="swiper-slide select-none">
-            <img src="https://i.picsum.photos/id/1024/1920/1280.jpg?hmac=-PIpG7j_fRwN8Qtfnsc3M8-kC3yb0XYOBfVzlPSuVII"
-              class="object-cover h-96 w-96 bg-white object-fill mx-auto" alt="" />
-            <p class="mt-5 text-center text-2xl mx-auto">LOREM 1</p>
+            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+1.png"
+              class="object-cover object-cover mx-auto" alt="" />
+            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Sergio Busquet</p>
+          </div>
+          <div class="swiper-slide select-none">
+            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+6.png"
+              class="object-cover object-cover mx-auto" alt="" />
+            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Karim Benzema</p>
+          </div>
+          <div class="swiper-slide select-none">
+            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+7.png"
+              class="object-cover object-cover mx-auto" alt="" />
+            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Thomas Müller</p>
           </div>
 
         </div>
-        <div class="swiper-pagination"></div>
+      
       </div>
 
       <div class="swiper-button-next "></div>
       <div class="swiper-button-prev "></div>
-
+      <p class='text-sm text-white text-center mt-[-56px] md:hidden'>Desliza para ver más</p>
     </div>
 
   </div>
@@ -215,20 +203,11 @@
       breakpoints: {
         320: {
           slidesPerView: 1,
-          spaceBetween: 20,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-         
+          spaceBetween: 20,                  
         },
         640: {
           slidesPerView: 1,
-          spaceBetween: 20,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
+          spaceBetween: 20,          
         },
         720: {
           slidesPerView: 2,
@@ -242,11 +221,7 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
             
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
+          },          
         },
         1440: {
           slidesPerView: 3,
@@ -256,10 +231,7 @@
             prevEl: ".swiper-button-prev",
            
           },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
+          
         },
 
       },
