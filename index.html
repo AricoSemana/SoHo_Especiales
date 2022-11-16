@@ -21,107 +21,113 @@
 
 <style>
   /* pagination */
-.font-mukta {
-  font-family: "Mukta", sans-serif;
-}
+  .font-mukta {
+    font-family: "Mukta", sans-serif;
+  }
 
-.swiper-container {
-  position: relative;
-  margin: 0 auto;
-  max-width: 1120px;
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-  gap: 100px; 
-}
-
-.background-soho{
-  background-image: url('./img/Fondo-Slide-1vs.jpg');
-   background-size: cover;
-  background-repeat:no-repeat; 
-  background-color: black;
-}
-
-.swiper-wrapper .swiper-slide {
-  width: 374px;
-}
-
-
-.swiper-button-next {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z' clip-rule='evenodd' /%3e%3c/svg%3e ");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
-  top: 40% !important;
-  width: calc(var(--swiper-navigation-size)/ 24 * 22);
-}
-
-.swiper-button-prev {
-  background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M7.28 7.72a.75.75 0 010 1.06l-2.47 2.47H21a.75.75 0 010 1.5H4.81l2.47 2.47a.75.75 0 11-1.06 1.06l-3.75-3.75a.75.75 0 010-1.06l3.75-3.75a.75.75 0 011.06 0z' clip-rule='evenodd' /%3e%3c/svg%3e ");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
-  top: 40% !important;
-  width: calc(var(--swiper-navigation-size)/ 24 * 22);
-}
-
-.swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled {
-  opacity: 1;
-}
-
-.swiper-button-next::after {
-  display: none;
-}
-
-.swiper-button-prev::after {
-  display: none;
-}
-
-
-@media (max-width: 640px) {
-
-   .swiper-container {
+  .swiper-container {
     position: relative;
     margin: 0 auto;
-    max-width: 320px;
+    max-width: 1120px;
     width: 100%;
     overflow: hidden;
     box-sizing: border-box;
+    gap: 100px;
+  }
+
+  .background-soho {
+    background-image: url('./img/Fondo-Slide-1vs.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+  }
+
+  .swiper-wrapper .swiper-slide {
+    width: 374px;
+  }
+
+
+  .swiper-button-next {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z' clip-rule='evenodd' /%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    top: 40% !important;
+    width: calc(var(--swiper-navigation-size)/ 24 * 22);
   }
 
   .swiper-button-prev {
-    background-image: none
+    background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M7.28 7.72a.75.75 0 010 1.06l-2.47 2.47H21a.75.75 0 010 1.5H4.81l2.47 2.47a.75.75 0 11-1.06 1.06l-3.75-3.75a.75.75 0 010-1.06l3.75-3.75a.75.75 0 011.06 0z' clip-rule='evenodd' /%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    top: 40% !important;
+    width: calc(var(--swiper-navigation-size)/ 24 * 22);
   }
 
-  .swiper-button-next {
-    background-image: none
-  }
-}
-
-@media (min-width: 1024px) {
-
-  .swiper-button-next {   
-    margin-right: 1rem;    
+  .swiper-button-next.swiper-button-disabled,
+  .swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
   }
 
-  .swiper-button-prev {    
-    margin-left: 1rem; 
-  }
- 
-}
-
-@media (min-width: 1440px) {
-
-  .swiper-button-next {  
-    margin-right: 4rem;    
+  .swiper-button-next::after {
+    display: none;
   }
 
-  .swiper-button-prev {  
-    margin-left: 4rem; 
+  .swiper-button-prev::after {
+    display: none;
   }
 
-}
+  .container-img {
+    height: 340px;
+    width: 340px;
+  }
+
+
+
+  @media (max-width: 640px) {
+
+    .swiper-container {
+      position: relative;
+      margin: 0 auto;
+      max-width: 320px;
+      width: 100%;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .swiper-button-prev {
+      background-image: none
+    }
+
+    .swiper-button-next {
+      background-image: none
+    }
+  }
+
+  @media (min-width: 1024px) {
+
+    .swiper-button-next {
+      margin-right: 1rem;
+    }
+
+    .swiper-button-prev {
+      margin-left: 1rem;
+    }
+
+  }
+
+  @media (min-width: 1440px) {
+
+    .swiper-button-next {
+      margin-right: 4rem;
+    }
+
+    .swiper-button-prev {
+      margin-left: 4rem;
+    }
+
+  }
 </style>
 
 <body>
@@ -130,13 +136,14 @@
 
     <div class='mt-10 md:mt-16'>
       <h2
-      class="text-[40px] max-w-screen-xl text-black text-center font-extrabold leading-none md:text-6xl lg:text-8xl  mx-auto">
-      EL ÚLTIMO MUNDIAL DE
-    </h2>
-    <h2 class="text-[40px] max-w-screen-xl text-white text-center font-extrabold leading-none md:text-6xl lg:text-8xl mx-auto">
-      ALGUNAS ESTELLAS
-    </h2>
-    </div>    
+        class="text-[40px] max-w-screen-xl text-black text-center font-extrabold leading-none md:text-6xl lg:text-8xl  mx-auto">
+        EL ÚLTIMO MUNDIAL DE
+      </h2>
+      <h2
+        class="text-[40px] max-w-screen-xl text-white text-center font-extrabold leading-none md:text-6xl lg:text-8xl mx-auto">
+        ALGUNAS ESTELLAS
+      </h2>
+    </div>
 
     <div class="relative max-w-screen-2xl mx-auto px-2">
 
@@ -145,98 +152,123 @@
         <div class="swiper-wrapper text-white text-center mt-5 mb-16 md:mb-32 ">
 
           <div class="swiper-slide select-none">
-            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+2.png"
-              class="object-cover object-cover mx-auto" alt="" />
-            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Lionel Messi</p>
+            <div class='container-img mx-auto'>
+              <div
+                class="ml-4 md:ml-11 w-[340px] h-[340px] bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+2.png')] object-cover bg-no-repeat 
+                      hover:bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/1/Jugador-2.gif')]">
+              </div>
+              <p class="text-center text-2xl md:mx-auto max-w-[320px]">Lionel Messi</p>
+            </div>
           </div>
           <div class="swiper-slide select-none">
-            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+3.png"
-              class="object-cover object-cover mx-auto" alt="" />
-            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Cristiano Ronaldo</p>
+            <div class='container-img mx-auto'>
+              <div
+                class="ml-4 md:ml-11 w-[340px] h-[340px] bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+3.png')] object-cover bg-no-repeat 
+                      hover:bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/1/Jugador-3.gif')]">
+              </div>
+              <p class="text-center text-2xl md:mx-auto max-w-[320px]">Cristiano Ronaldo</p>
+            </div>
           </div>
           <div class="swiper-slide select-none">
-            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+4.png"
-              class="object-cover object-cover mx-auto" alt="" />
-            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Robert Lewandoski</p>
+            <div class='container-img mx-auto'>
+              <div
+                class="ml-4 md:ml-11 w-[340px] h-[340px] bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+4.png')] object-cover bg-no-repeat 
+                      hover:bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/1/Jugador-4.gif')]">
+              </div>
+              <p class="text-center text-2xl md:mx-auto max-w-[320px]">Robert Lewandoski</p>
+            </div>
           </div>
           <div class="swiper-slide select-none">
-            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+5.png"
-              class="object-cover object-cover mx-auto" alt="" />
-            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Luka Modric</p>
+            <div class='container-img mx-auto'>
+              <div
+                class="ml-4 md:ml-11 w-[340px] h-[340px] bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+5.png')] object-cover bg-no-repeat 
+                      hover:bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/1/Jugador-5.gif')]">
+              </div>
+              <p class="text-center text-2xl md:mx-auto max-w-[320px]">Luka Modric</p>
+            </div>
           </div>
           <div class="swiper-slide select-none">
-            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+1.png"
-              class="object-cover object-cover mx-auto" alt="" />
-            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Sergio Busquet</p>
+            <div class='container-img mx-auto'>
+              <div
+                class="ml-4 md:ml-11 w-[340px] h-[340px] bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+1.png')] object-cover bg-no-repeat hover:bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/1/Jugador-1.gif')]">
+              </div>
+              <p class="text-center text-2xl md:mx-auto max-w-[320px]">Sergio Busquet</p>
+            </div>
           </div>
           <div class="swiper-slide select-none">
-            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+6.png"
-              class="object-cover object-cover mx-auto" alt="" />
-            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Karim Benzema</p>
+            <div class='container-img mx-auto'>
+              <div
+                class="ml-4 md:ml-11 w-[340px] h-[340px] bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+6.png')] object-cover bg-no-repeat 
+                      hover:bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/1/Jugador-6.gif')]">
+              </div>
+              <p class="text-center text-2xl md:mx-auto max-w-[320px]">Karim Benzema</p>
+            </div>
           </div>
           <div class="swiper-slide select-none">
-            <img src="https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+7.png"
-              class="object-cover object-cover mx-auto" alt="" />
-            <p class="text-center text-2xl mx-auto mt-5 md:mt-10">Thomas Müller</p>
+            <div class='container-img mx-auto'>
+              <div
+                class="ml-4 md:ml-11 w-[340px] h-[340px] bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/3/XIAOMI2Mesa+de+trabajo+7.png')] object-cover bg-no-repeat 
+                      hover:bg-[url('https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/1/Jugador-7.gif')]">
+              </div>
+              <p class="text-center text-2xl md:mx-auto max-w-[320px]">Thomas Müller</p>
+            </div>
           </div>
 
         </div>
-      
+
       </div>
 
-      <div class="swiper-button-next "></div>
-      <div class="swiper-button-prev "></div>
-      <p class='text-sm text-white text-center mt-[-56px] md:hidden'>Desliza para ver más</p>
+      <div class="swiper-button-next mr-4"></div>
+      <div class="swiper-button-prev ml-4"></div>
+      <p class='text-sm text-white text-center md:hidden'>Desliza para ver más</p>
+
+
     </div>
 
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 'auto',
-      trhesold: 20,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 20,                  
-        },
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 20,          
-        },
-        720: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 8,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            
-          },          
-        },
-        1440: {
-          slidesPerView: 3,
-          spaceBetween: 100,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-           
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 'auto',
+        trhesold: 20,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
           },
-          
-        },
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          720: {
+            slidesPerView: 2,
+            spaceBetween: 20,
 
-      },
-    });
-  </script>
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 8,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          },
+          1440: {
+            slidesPerView: 3,
+            spaceBetween: 100,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+
+          },
+
+        },
+      });
+    </script>
 </body>
 
 </html>
