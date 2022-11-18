@@ -3,232 +3,208 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Especial Mundial - Soho.co</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
   <!-- Swiper's CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css" />
 
-  <!-- pre connect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
 
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;600;700;800" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
     /* pagination */
-  .font-mukta {
-    font-family: "Mukta", sans-serif;
-  }
-  
-  .swiper-container {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-  }
-  
-  .swiper-pagination {
-    margin-bottom: 50px;
-  }
-  
-  .swiper-container .swiper-pagination .swiper-pagination-bullet {
-    width: 90px;
-    height: 5px;
-    background-color: transparent;
-    border: 1px solid black;
-    opacity: .8;
-    border-radius: 0%;
-   
-  }
-  
-  .swiper-container .swiper-pagination .swiper-pagination-bullet-active,
-  .swiper-container .swiper-pagination .swiper-pagination-bullet:hover {
-    background-color: black;
-    opacity: 1;
-  }
-  
-  .swiper-button-next::after {
-    display: none;
-  }
-  
-  .swiper-button-prev::after {
-    display: none;
-  }
-  
-  
-  .container-image{
-    background-repeat: no-repeat;
-    background-image: url("");
-  }
-  
-  @media (max-width: 640px) {
-  
-    .swiper-container .swiper-pagination {
-      display:none;
+    .font-mukta {
+      font-family: "Mukta", sans-serif;
     }
-  
-    .swiper-pagination {
-      margin-bottom: 2px;
+
+    .mySwiper .swiper-container {
+      width: 100%;
     }
-    
-    .swiper-button-next {
-      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z' clip-rule='evenodd' /%3e%3c/svg%3e ");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-      background-position: center;
-      top: 93% !important;
-      width: calc(var(--swiper-navigation-size)/ 26 * 29);
+
+    .mySwiper .swiper-pagination {
+      margin-bottom: 10px;
     }
-    
-    .swiper-button-prev {
-      background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M7.28 7.72a.75.75 0 010 1.06l-2.47 2.47H21a.75.75 0 010 1.5H4.81l2.47 2.47a.75.75 0 11-1.06 1.06l-3.75-3.75a.75.75 0 010-1.06l3.75-3.75a.75.75 0 011.06 0z' clip-rule='evenodd' /%3e%3c/svg%3e ");
-      background-repeat: no-repeat;
-      background-size: 100% auto;
-      background-position: center;
-      top: 93% !important;
-      width: calc(var(--swiper-navigation-size)/ 26 * 29);
+
+
+    .mySwiper .swiper-pagination .swiper-pagination-bullet {
+      width: 90px;
+      height: 5px;
+      background-color: transparent;
+      border: 1px solid black;
+      opacity: .8;
+      border-radius: 0%;
+
     }
-    
-    .swiper-button-next.swiper-button-disabled,
-    .swiper-button-prev.swiper-button-disabled {
+
+    .mySwiper .swiper-pagination .swiper-pagination-bullet-active,
+    .mySwiper .swiper-pagination .swiper-pagination-bullet:hover {
+      background-color: black;
       opacity: 1;
     }
-    
-    .swiper-button-next::after {
+
+    .mySwiper .swiper-button-next::after {
       display: none;
     }
-    
-    .swiper-button-prev::after {
+
+    .mySwiper .swiper-button-prev::after {
       display: none;
     }
-  }
+
+    
+
+    @media (max-width: 640px) {
+
+      .mySwiper .swiper-pagination {
+        display: none;
+      }
+
+      .mySwiper .swiper-button-next {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M16.72 7.72a.75.75 0 011.06 0l3.75 3.75a.75.75 0 010 1.06l-3.75 3.75a.75.75 0 11-1.06-1.06l2.47-2.47H3a.75.75 0 010-1.5h16.19l-2.47-2.47a.75.75 0 010-1.06z' clip-rule='evenodd' /%3e%3c/svg%3e ");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+        top: 95% !important;
+        width: calc(var(--swiper-navigation-size)/ 26 * 29);
+      }
+
+      .mySwiper .swiper-button-prev {
+        background-image: url("data:image/svg+xml;charset=UTF-8, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' class='w-12 h-12'%3e%3cpath fill-rule='evenodd' d='M7.28 7.72a.75.75 0 010 1.06l-2.47 2.47H21a.75.75 0 010 1.5H4.81l2.47 2.47a.75.75 0 11-1.06 1.06l-3.75-3.75a.75.75 0 010-1.06l3.75-3.75a.75.75 0 011.06 0z' clip-rule='evenodd' /%3e%3c/svg%3e ");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: center;
+        top: 95% !important;
+        width: calc(var(--swiper-navigation-size)/ 26 * 29);
+      }
+
+      .mySwiper .swiper-button-next.swiper-button-disabled,
+      .mySwiper .swiper-button-prev.swiper-button-disabled {
+        opacity: 1;
+      }
+
+      .mySwiper .swiper-button-next::after {
+        display: none;
+      }
+
+      .mySwiper .swiper-button-prev::after {
+        display: none;
+      }
+    }
   </style>
 
 </head>
 
-
-
 <body>
-  <div class="relative bg-[#ECECEC] w-full mx-auto font-mukta">
-    <div class="swiper-container mySwiper  h-[620px]">
+  <div class="relative bg-[#ECECEC] mx-auto font-mukta w-full h-[720px]">
+    <div class="swiper-container mySwiper md:h-[610px]">
       <div class="swiper-wrapper text-black ">
-        <div class="swiper-slide select-none ">
-          <div class="relative flex flex-col justify-center overflow-hidden bg-[#ECECEC] md:flex-row md:mt-2">
-            <img src='https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/Grupo509.svg' class="bg-no-repeat mx-auto md:mx-0 h-56 w-56  md:h-[450px] md:w-[300px] mt-10">
-            <div class="ml-4 md:ml-8 mt-16 md:mt-28 md:w-[632px]">
-              <h3 class="text-xl">LAS <b class='md:font-extrabold'>CABALAS</b> DE <b class='md:font-extrabold'>GENNARO GATTUSO</b></h3>
-              <h2 class="md:text-7xl text-3xl font-bold">LEER A FYODOR DOSTOEVSKY</h2>
-              <p class="mt-2 md:w-[551px] w-[300px] text-base md:text-lg leading-normal md:leading-none">No podía salir del hotel rumbo al estadio sin haber leído al escritor ruso Fyodor Dostoevsky. Quién diría que el secreto de uno de los mejores centrocampistas de la historia sería leer un poco de la psicología humana en el complejo contexto de la Rusia zarista.</p>
-            </div>
+        <div class="swiper-slide flex flex-col justify-center overflow-hidden md:flex-row ">
+          <img
+            src='https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/Grupo509.svg'
+            class="bg-no-repeat mx-auto md:mx-0 h-56 md:h-[450px] mt-10">
+          <div class="ml-4 md:ml-8 mt-16 md:mt-28 md:w-[632px] text-center md:text-left">
+            <h3 class="text-xl">LAS <b class='md:font-extrabold'>CABALAS</b> DE <b class='md:font-extrabold'>GENNARO
+                GATTUSO</b></h3>
+            <h2 class="md:text-7xl text-3xl font-bold">LEER A FYODOR DOSTOEVSKY</h2>
+            <p class="mt-2 md:w-[551px]  text-base md:text-lg leading-normal md:leading-none mb-5">No podía salir
+              del hotel rumbo al estadio sin haber leído al escritor ruso Fyodor Dostoevsky. Quién diría que el
+              secreto de uno de los mejores centrocampistas de la historia sería leer un poco de la psicología humana
+              en el complejo contexto de la Rusia zarista.</p>
           </div>
         </div>
-        <div class="swiper-slide select-none ">
-          <div class="relative flex flex-col justify-center overflow-hidden bg-[#ECECEC] md:flex-row md:mt-2">
-            <img src='https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/Grupo509.svg' class="bg-no-repeat mx-auto md:mx-0 h-56 w-56  md:h-[450px] md:w-[300px] mt-10">
-            <div class="ml-4 md:ml-8 mt-16 md:mt-28 md:w-[632px]">
-              <h3 class="text-xl">LAS <b class='md:font-extrabold'>CABALAS</b> DE <b class='md:font-extrabold'>RONALDO NAZÁRIO</b></h3>
-              <h2 class="md:text-7xl text-3xl font-bold">EL PIE DERECHO PRIMERO</h2>
-              <p class="mt-2 md:w-[551px] w-[300px] text-base md:text-lg leading-normal md:leading-none">No podía ingresar a la cancha si no entraba con el pie derecho primero. ¿Por qué? O fenómeno no lo sabe; sin embargo, hacer esto lo llevó a conquistar varios campeonatos, premios y distinciones, entre ellos: dos Mundiales, un Balón de Oro, Bota de Oro en la Copa Mundial del 2002 y demás.</p>
-            </div>
+        <div class="swiper-slide flex flex-col justify-center overflow-hidden md:flex-row ">
+
+          <img
+            src='https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/Grupo509.svg'
+            class="bg-no-repeat mx-auto md:mx-0 h-56 md:h-[450px] mt-10">
+          <div class="ml-4 md:ml-8 mt-16 md:mt-28 md:w-[632px] text-center md:text-left">
+            <h3 class="text-xl">LAS <b class='md:font-extrabold'>CABALAS</b> DE <b class='md:font-extrabold'>RONALDO
+                NAZÁRIO</b></h3>
+            <h2 class="md:text-7xl text-3xl font-bold">EL PIE DERECHO PRIMERO</h2>
+            <p class="mt-2 md:w-[551px] text-base md:text-lg leading-normal md:leading-none mb-5">No podía
+              ingresar a la cancha si no entraba con el pie derecho primero. ¿Por qué? O fenómeno no lo sabe; sin
+              embargo, hacer esto lo llevó a conquistar varios campeonatos, premios y distinciones, entre ellos: dos
+              Mundiales, un Balón de Oro, Bota de Oro en la Copa Mundial del 2002 y demás.</p>
           </div>
+
         </div>
-        <div class="swiper-slide select-none ">
-          <div class="relative flex flex-col justify-center overflow-hidden bg-[#ECECEC] md:flex-row md:mt-2">
-            <img src='https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/Grupo509.svg' class="bg-no-repeat mx-auto md:mx-0 h-56 w-56  md:h-[450px] md:w-[300px] mt-10">
-            <div class="ml-4 md:ml-8 mt-16 md:mt-28 md:w-[632px]">
-              <h3 class="text-xl">LAS <b class='md:font-extrabold'>CABALAS</b> DE <b class='md:font-extrabold'>IKER CASILLAS</b></h3>
-              <h2 class="md:text-7xl text-3xl font-bold">CON LAS MEDIAS AL REVÉS</h2>
-              <p class="mt-2 md:w-[551px] w-[300px] text-base md:text-lg leading-normal md:leading-none">Jugaba con las medias al revés, recortaba las camisetas y tocaba el larguero con su mano izquierda cada vez que su equipo anotaba un gol, esas eran algunas de las manías que tenía el hombre que levantó la Copa del Mundo en el 2010.</p>
-            </div>
+        <div class="swiper-slide flex flex-col justify-center overflow-hidden md:flex-row ">
+
+          <img
+            src='https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/Grupo509.svg'
+            class="bg-no-repeat mx-auto md:mx-0 h-56 md:h-[450px] mt-10">
+          <div class="ml-4 md:ml-8 mt-16 md:mt-28 md:w-[632px] text-center md:text-left">
+            <h3 class="text-xl">LAS <b class='md:font-extrabold'>CABALAS</b> DE <b class='md:font-extrabold'>IKER
+                CASILLAS</b></h3>
+            <h2 class="md:text-7xl text-3xl font-bold">CON LAS MEDIAS AL REVÉS</h2>
+            <p class="mt-2 md:w-[551px]  text-base md:text-lg leading-normal md:leading-none mb-5">Jugaba con las
+              medias al revés, recortaba las camisetas y tocaba el larguero con su mano izquierda cada vez que su
+              equipo anotaba un gol, esas eran algunas de las manías que tenía el hombre que levantó la Copa del Mundo
+              en el 2010.</p>
           </div>
+
         </div>
-        <div class="swiper-slide select-none ">
-          <div class="relative flex flex-col justify-center overflow-hidden bg-[#ECECEC] md:flex-row md:mt-2">
-            <img src='https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/Grupo509.svg' class="bg-no-repeat mx-auto md:mx-0 h-56 w-56  md:h-[450px] md:w-[300px] mt-10">
-            <div class="ml-4 md:ml-8 mt-16 md:mt-28 md:w-[632px]">
-              <h3 class="text-xl">LAS <b class='md:font-extrabold'>CABALAS</b> DE <b class='md:font-extrabold'>LAURENT BLANC</b></h3>
-              <h2 class="md:text-7xl text-3xl font-bold">BESAR AL PORTERO</h2>
-              <p class="mt-2 md:w-[551px] w-[300px] text-base md:text-lg leading-normal md:leading-none">Antes de cada partido el central besaba la cabeza del portero y lo cierto es que esta acción dio sus resultados. Vale la pena destacar que en la final el defensa no podía jugar; no obstante, en los camerinos le dio su respectivo beso al guardameta. ¿El resultado? 3-0 a favor.</p>
-            </div>
+        <div class="swiper-slide flex flex-col justify-center overflow-hidden md:flex-row ">
+
+          <img
+            src='https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/Grupo509.svg'
+            class="bg-no-repeat mx-auto md:mx-0 h-56 md:h-[450px] mt-10">
+          <div class="ml-4 md:ml-8 mt-16 md:mt-28 md:w-[632px] text-center md:text-left">
+            <h3 class="text-xl">LAS <b class='md:font-extrabold'>CABALAS</b> DE <b class='md:font-extrabold'>LAURENT
+                BLANC</b></h3>
+            <h2 class="md:text-7xl text-3xl font-bold">BESAR AL PORTERO</h2>
+            <p class="mt-2 md:w-[551px]  text-base md:text-lg leading-normal md:leading-none mb-5">Antes de cada
+              partido el central besaba la cabeza del portero y lo cierto es que esta acción dio sus resultados. Vale
+              la pena destacar que en la final el defensa no podía jugar; no obstante, en los camerinos le dio su
+              respectivo beso al guardameta. ¿El resultado? 3-0 a favor.</p>
           </div>
+
         </div>
-        <div class="swiper-slide select-none ">
-          <div class="relative flex flex-col justify-center overflow-hidden bg-[#ECECEC] md:flex-row md:mt-2">
-            <img src='https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/Grupo509.svg' class="bg-no-repeat mx-auto md:mx-0 h-56 w-56  md:h-[450px] md:w-[300px] mt-10">
-            <div class="ml-4 md:ml-8 mt-16 md:mt-28 md:w-[632px]">
-              <h3 class="text-xl">LAS <b class='md:font-extrabold'>CABALAS</b> DE <b class='md:font-extrabold'>RENÉ HIGUITA</b></h3>
-              <h2 class="md:text-7xl text-3xl font-bold">ROPA INTERIOR AZUL</h2>
-              <p class="mt-2 md:w-[551px] w-[300px] text-base md:text-lg leading-normal md:leading-none">“A fines de los ochenta, Atlético Nacional no podía ganarle a Millonarios. En eso llegó Carlos Perea y fuimos juntos a ver a una señora que leía la suerte. Nos dijo que nos habían hecho alguna brujería y nos envió una correa y calzoncillos azules para todos los jugadores.</p>
-            </div>
+        <div class="swiper-slide flex flex-col justify-center overflow-hidden md:flex-row ">
+
+          <img
+            src='https://cdn.semana.com/semana/soho/upload/media/2022/el+ultimo+mundial+de+algunas+estrellas/Grupo509.svg'
+            class="bg-no-repeat mx-auto md:mx-0 h-56 md:h-[450px] mt-10">
+          <div class="ml-4 md:ml-8 mt-16 md:mt-28 md:w-[632px] text-center md:text-left">
+            <h3 class="text-xl">LAS <b class='md:font-extrabold'>CABALAS</b> DE <b class='md:font-extrabold'>RENÉ
+                HIGUITA</b></h3>
+            <h2 class="md:text-7xl text-3xl font-bold">ROPA INTERIOR AZUL</h2>
+            <p class="mt-2 md:w-[551px] text-base md:text-lg leading-normal md:leading-none mb-5">“A fines de los
+              ochenta, Atlético Nacional no podía ganarle a Millonarios. En eso llegó Carlos Perea y fuimos juntos a
+              ver a una señora que leía la suerte. Nos dijo que nos habían hecho alguna brujería y nos envió una
+              correa y calzoncillos azules para todos los jugadores.</p>
           </div>
+
         </div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-next mr-4"></div>
+      <p class='text-sm text-black text-center md:hidden mt-10 mb-5'>Desliza para ver más</p>
       <div class="swiper-button-prev ml-4"></div>
     </div>
-    <p class='text-sm text-black text-center mt-[-56px]  md:hidden'>Desliza para ver más</p>
-   
   </div>
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 'auto',
-      trhesold: 20,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",            
-          },          
-         
-        },
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",            
-          },         
-         
-        },
-        720: {
-          slidesPerView: 1,
-          spaceBetween: 10,
 
+  <!-- Swiper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+  <script>
+    setTimeout(() => {
+      new Swiper(".mySwiper", {
+        trhesold: 20,
+        loop: true,
+        effect: 'slide',
+        navigation: {
+          nextEl: ".mySwiper .swiper-button-next",
+          prevEl: ".mySwiper .swiper-button-prev",
         },
-        1024: {
-          slidesPerView: 1,
-          spaceBetween: 10,         
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-         
+        pagination: {
+          el: ".mySwiper .swiper-pagination",
+          clickable: true,
         },
-        1440: {
-          slidesPerView: 1,
-          spaceBetween: 10,         
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-        },
-      }
-      
-    });
+      });
+    }, 2000)
   </script>
 </body>
 
